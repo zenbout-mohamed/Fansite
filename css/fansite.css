@@ -7,7 +7,33 @@
 /* BANNIERE */
 
 .banniere{
-    
+   background:url("./img/banniere.jpg") center/cover no-repeat;
+   height:400px;
+   position:relative;
+   text-align:center;
+   align-items:center;
+   display:flex;
+   justify-content:center;
+}
+
+.banniere:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0,0,0,0.4);
+}
+
+.banniere-contenu{
+    position:relative;
+    z-index:1;
+}
+
+.banniere h1{
+    font-size:48px;
+    padding:10px;
 }
 
 
