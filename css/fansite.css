@@ -32,8 +32,28 @@
 }
 
 .banniere h1{
-    font-size:48px;
-    padding:10px;
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.banniere p {
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.button-banniere{
+    display:inline-block;
+    padding:10px 20px;
+    background-color: #2290fd;
+    text-decoration:none;
+    transition:background 0.3s;
+    border-radius:5px;
+    color:#fff;
+
+}
+
+.button-banniere:hover{
+    color:#0065ca;
 }
 
 
