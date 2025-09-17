@@ -1,0 +1,35 @@
+.footer{
+    background-color:#eee;
+    padding:20px;
+    text-align:center;
+    color:#eee;
+}
+
+
+.logo-footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:18px;
+    margin-bottom:15px;
+}
+
+.logo-footer img {
+    object-fit: cover;
+    height:40px;
+}
+
+.footer-logo i {
+    transition:color 0.3s;
+    color:#eee;
+    font-size:24px;
+}
+
+.footer.logo i:hover{
+    color:#1e90ff;
+}
+
+.footer-links p{
+    margin:5px 0;
+    font-size:14px;
+}
