@@ -5,6 +5,14 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+.logo{
+    padding:0.35rem 0.20rem;
+    background:linear-gradient(45deg, #0055A4, #FFFFFF, #FF0000);
+    border-radius:8px;
+    color:#00274d;
+}
+
 /* BANNIERE */
 
 .banniere{
@@ -15,9 +23,9 @@
    align-items:center;
    display:flex;
    justify-content:center;
+   box-shadow:0 4px 8px rgba(0,0,0,0.2);
    
 }
-
 
 .banniere::before{
     content:"";
@@ -32,6 +40,11 @@
 .banniere-contenu{
     position:relative;
     z-index:1;
+    background:rgba(0,0,0,0.5);
+    padding:1rem;
+    border-radius:12px;
+    color:#fff;
+    
 }
 
 .banniere h1{
@@ -263,7 +276,56 @@
   margin-right: .5rem;
 }
 
-/* MEDIA QUESRIES */
+/* BILLETERIE TABLEAU */
+
+table{
+    width:100%;
+    margin:2rem auto;
+    border-collapse:collapse;
+    font-size:16px;
+    text-align:left;
+    overflow: hidden;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    border-radius:9px;
+}
+
+thead {
+  background-color: #003366; 
+  color: #fff;
+}
+
+thead th {
+  padding: 12px 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; 
+}
+tbody tr:hover {
+  background-color: #e6f0ff; 
+  cursor: pointer;
+}
+
+tbody td {
+  padding: 12px 15px;
+}
+
+td.disponible {
+  color: rgb(7, 144, 89);
+  font-weight: bold;
+}
+
+td.reserve {
+  color: #D62E0D;
+  font-weight: bold;
+}
+/* MEDIA QUERIES */
 @media (max-width: 768px) {
   .contact{
     flex-direction: column;
