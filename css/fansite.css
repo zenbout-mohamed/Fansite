@@ -8,16 +8,18 @@
 /* BANNIERE */
 
 .banniere{
-   background:url("./img/banniere.jpg") center/cover no-repeat;
+   background:url("../img/banniere.jpg") center/cover no-repeat;
    height:400px;
    position:relative;
    text-align:center;
    align-items:center;
    display:flex;
    justify-content:center;
+   
 }
 
-.banniere:before{
+
+.banniere::before{
     content:"";
     position:absolute;
     top:0;
@@ -42,20 +44,25 @@
     margin-bottom:20px;
 }
 
-.button-banniere{
+
+.banniere a {
     display:inline-block;
-    padding:10px 20px;
-    background-color: #2290fd;
-    text-decoration:none;
-    transition:background 0.3s;
-    border-radius:5px;
+    padding: 12px 25px;
+    margin-top: 15px;
+    background-color: #02305d;
     color:#fff;
-
+    text-decoration:none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
 }
 
-.button-banniere:hover{
-    color:#0065ca;
+.banniere a:hover {
+  background: #005bb5;
+  transform: scale(1.05);
 }
+
+
 /* MAIN INDEX */
 .carte{
     display:flex;
@@ -91,9 +98,23 @@
     text-align:center;
 }
 
-.article-info p:first-child {
-  font-weight: bold;
-  margin-bottom: 5px;
+.article-info .date{
+    font-size:12px;
+    color:#888;
+    margin-bottom:8px;
+}
+
+.article-info .titre{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:10px;
+    color:#333;
+}
+
+.article-info .category{
+    font-size:14px;
+    color:#1e90ff;
+    text-transform:uppercase;
 }
 
 /* MAIN GALERIE */
