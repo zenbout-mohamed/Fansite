@@ -47,14 +47,14 @@
 
 .banniere a {
     display:inline-block;
-    padding: 12px 25px;
+    padding:12px 25px;
     margin-top: 15px;
     background-color: #02305d;
     color:#fff;
     text-decoration:none;
     border-radius: 8px;
     font-weight: bold;
-    transition: background 0.3s, transform 0.2s;
+    transition: background 0.3s;
 }
 
 .banniere a:hover {
@@ -143,8 +143,6 @@
   padding: 1rem;
 }
 
-
-
 .formulaire{
     flex:2;
     max-width:600px;
@@ -209,7 +207,6 @@
 
 /* ASIDE FORMULAIRE */
 
-/* Aside occupe moins de place */
 .contact-aside {
   flex: 1;
   background: #f1f1f1;
@@ -219,4 +216,20 @@
   font-family: Arial, sans-serif;
 }
 
+.contact-aside h2 {
+  color: #0055A4;
+  margin-bottom: .8rem;
+}
+
+.contact-aside i {
+  color: #0055A4;
+  margin-right: .5rem;
+}
+
+/* MEDIA QUESRIES */
+@media (max-width: 768px) {
+  .contact{
+    flex-direction: column;
+  }
+}
 
