@@ -2,6 +2,7 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* BANNIERE */
@@ -55,10 +56,45 @@
 .button-banniere:hover{
     color:#0065ca;
 }
+/* MAIN INDEX */
+.carte{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+}
 
+.article-carte{
+    flex: 1 1 250px;        
+    max-width: 300px;       
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #eee;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
 
+.article.carte:hover{
+    transform: scale(1.05);
+}
 
+.article-carte img {
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
 
+.article-info{
+    padding:15px;
+    text-align:center;
+}
+
+.article-info p:first-child {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 
 /* MAIN GALERIE */
 
