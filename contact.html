@@ -30,48 +30,41 @@
             <a href="billeterie.html">Billetterie</a>
         </div>
     </section>
-    <main>
-        <form class="form-om">
-            <!-- Sujet -->
+    <main class ="contact">
+        <form class="formulaire" method="post" action="#">
             <fieldset>
                 <legend>Choisissez un sujet</legend>
                 <label for="objet">Objet de votre message</label>
-                <select id="objet" name="objet">
-                    <option value="billetterie">Billetterie</option>
-                    <option value="boutique">Boutique</option>
+                <select name="objet">
+                    <option value="billetterie" selected>Billetterie</option>
+                    <option value="boutique">Galerie</option>
                     <option value="entreprises">Entreprises</option>
                 </select>
             </fieldset>
-
-            <!-- Infos -->
             <fieldset>
-                <legend>Vos informations</legend>
+                <legend>Vos informations personnelles :</legend>
                 <label for="nom">Nom</label>
                 <input type="text" id="nom" name="nom" placeholder="Saisissez votre nom" required>
 
                 <label for="prenom">Prénom</label>
-                <input type="text" id="prenom" name="prenom" placeholder="Saisissez votre prénom" required>
+                <input type="text" name="prenom" placeholder="Saisissez votre prénom" required>
 
                 <label for="email">Courriel</label>
-                <input type="email" id="email" name="email" placeholder="Saisissez votre adresse email" required>
+                <input type="email" name="email" placeholder="Saisissez votre adresse email" required>
 
                 <label for="tel">Téléphone</label>
-                <input type="tel" id="tel" name="tel" placeholder="Saisissez votre numéro de téléphone">
+                <input type="tel" name="tel" placeholder="Saisissez votre numéro de téléphone">
             </fieldset>
-
-            <!-- Message -->
             <fieldset>
                 <legend>Votre message</legend>
                 <label for="message">Spécifiez votre message</label>
-                <textarea id="message" name="message"></textarea>
+                <textarea name="message"></textarea>
 
                 <label for="fichier">Joignez un fichier</label>
-                <input type="file" id="fichier" name="fichier">
+                <input type="file" name="fichier" value ="Choisir un fichier">
             </fieldset>
-
-
             <fieldset>
-                <legend>Consentement</legend>
+                <legend>Consentement :</legend>
                 <label>
                     <input type="checkbox" name="consentement" required>
                     Afin de pouvoir répondre à mon message, j’accepte que l’OM conserve mes informations puis que ces
@@ -82,14 +75,15 @@
             <button type="submit">Envoyer</button>
         </form>
     </main>
-    <aside>
+   <aside class="contact-aside">
         <div class="coordonnee">
             <h2>Nos coordonnées :</h2>
             <p>Adresse : 123 Rue de l'OM, 13000 Marseille</p>
             <p>Téléphone : +33 4 91 00 00 00</p>
-            <p>Email :
+            <p>Email : contact@om.fr</p>
         </div>
-        <div class="">
+
+        <div class="social-media">
             <h2>Suivez-nous sur les réseaux sociaux :</h2>
             <p><i class="fa-brands fa-facebook"></i> Facebook : <a href="https://www.facebook.com/OM">OM</a></p>
             <p><i class="fa-brands fa-twitter"></i> Twitter : <a href="https://twitter.com/OM">OM</a></p>
