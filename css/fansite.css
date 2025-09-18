@@ -189,8 +189,10 @@
     flex:2;
     max-width:600px;
     padding:2rem;
-    background-color:#f9f9f9;
     border-radius:12px;
+    border:none;
+    background-color: #00274d;
+    color: #fff;
     box-shadow:0 4px 12px rgba(0,0,0,0.1);
 }
 
@@ -204,14 +206,13 @@
     font-size:1.2rem;
     margin-bottom:1rem;
     font-weight:500;
-    color:#333;
+
 }
 
 .formulaire label{
     display:block;
     margin-bottom:0.5rem;
     font-weight:600;
-    color:#333;
 }
 
 .formulaire input, .formulaire select, .formulaire textarea{
@@ -221,13 +222,15 @@
     border-radius:8px;
     font-size:1rem;
     margin-bottom:1rem;
+    background: #fff;
+    color: #000;
     transition:border-color 0.3s;
 }
 
 .formulaire button{
     cursor: pointer;
     color:#fff;
-    background: #0055A4;
+    background-color: #ff0000;
     padding: 0.75rem 2rem;
     font-size: 1rem;
     font-weight: bold;
@@ -261,7 +264,7 @@
 .contact-aside {
   flex: 1;
   min-width:250px;
-  background: #f1f1f1;
+  background-color: #00274d;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -273,17 +276,33 @@
     border-radius: 10px; 
     margin: 1rem 0;     
     display: block;
+    box-shadow:0 2px 18px rgba(0,0,0,0.2);
 }
 .contact-aside h2 {
-  color: #0055A4;
+  color: #f4f6f8;
+  margin-bottom: .8rem;
+}
+
+.contact-aside p {
+  color: #f4f6f8;
   margin-bottom: .8rem;
 }
 
 .contact-aside i {
-  color: #0055A4;
+  color: #f8f9f9;
   margin-right: .5rem;
 }
-
+.contact-aside a {
+    display:inline-block;
+    padding:4px 8px;
+    margin-top: 15px;
+    background-color: #065cb3;
+    color:#fff;
+    text-decoration:none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s;;
+}
 /* BILLETERIE TABLEAU */
 
 table{
@@ -333,19 +352,42 @@ td.reserve {
   color: #D62E0D;
   font-weight: bold;
 }
-/* MEDIA QUERIES */
+/* *MEDIA QUERIES DE TOUTES LES PAGES*/
 @media (max-width: 768px) {
-  .contact{
-    flex-direction: column;
-  }
-  .formulaire,.contact-aside {
-    max-width: 100%;
-  }
-  .aside-image {
-      text-align: center;
-  }
-  .aside-image img {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    header nav ul li a {
+        font-size: 18px;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .formulaire,.contact-aside {
+        max-width: 100%;
+    }
+    .aside-image {
+        text-align: center;
+    }
+    .aside-image img {
       max-width: 90%;
-  }
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-links {
+        align-items: center;
+    }
 }
 
