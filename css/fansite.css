@@ -184,19 +184,18 @@
 
 /* CONTACT */
 
-.contact{
-  display: flex;
-  gap: 2rem; 
-  align-items: flex-start;
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 1rem;
+.conteneur {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 2rem auto;
+    flex-wrap: wrap; /* pour responsive */
 }
 
 .formulaire{
     flex:2;
     max-width:600px;
-    margin:2rem auto;
     padding:2rem;
     background-color:#f9f9f9;
     border-radius:12px;
@@ -237,7 +236,7 @@
     cursor: pointer;
     color:#fff;
     background: #0055A4;
-    padding: 9rem 2rem;
+    padding: 0.75rem 2rem;
     font-size: 1rem;
     font-weight: bold;
     border: none;
@@ -253,12 +252,14 @@
 .formulaire input [type ="checkbox"]{
     width:auto;
     margin-right:8px;
+    vertical-align:middle;
 }
 
 /* ASIDE FORMULAIRE */
 
 .contact-aside {
   flex: 1;
+  min-width:250px;
   background: #f1f1f1;
   padding: 1.5rem;
   border-radius: 10px;
@@ -329,6 +330,10 @@ td.reserve {
 @media (max-width: 768px) {
   .contact{
     flex-direction: column;
+  }
+
+  .formulaire,.contact-aside {
+    max-width: 100%;
   }
 }
 
